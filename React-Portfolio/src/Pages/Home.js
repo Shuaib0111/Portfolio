@@ -101,7 +101,7 @@ function Home() {
       <div className="flex justify-center md:justify-end w-full md:w-1/2 mb-8 md:mb-0">
         <img
           ref={myimageref}
-          className="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover shadow-lg"
+          className="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover"
           src={img}
           alt="Mohd Shuaib Anwar"
         />
