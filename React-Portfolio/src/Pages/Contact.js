@@ -4,36 +4,51 @@ import gsap from "gsap";
 
 function Contact() {
   const { email, phone } = contactDetails;
-  useEffect(()=>{
-    gsap.from("h1",{
+
+  useEffect(() => {
+    gsap.from("h1", {
       opacity: 0,
       duration: 2,
-      delay: 1
+      delay: 1,
     });
-    gsap.from(".email",{
+    gsap.from(".email", {
       y: "-40%",
       opacity: 0,
       duration: 1,
-      delay: 0.5
+      delay: 0.5,
     });
-    gsap.from(".phone",{
+    gsap.from(".phone", {
       y: "40%",
       opacity: 0,
       duration: 1,
-      delay: 1
+      delay: 1,
     });
-  },[])
+  }, []);
+
   return (
-    <main className="relative bottom-20 container mx-auto max-width section">
-      <h1 className="text-center text-xl md:text-3xl lg:text-4xl text-dark-heading dark:text-light-heading font-semibold md:font-bold">
-        For any queries please drop a mail
+    <main className="relative container mx-auto max-width section px-4 sm:px-8 py-6">
+      {/* Main Heading */}
+      <h1 className="text-center text-lg sm:text-xl md:text-2xl lg:text-3xl text-dark-heading dark:text-light-heading font-semibold md:font-bold mb-4">
+        For any queries, please drop a mail
       </h1>
-      <h3 className="email text-center text-2xl md:text-3xl lg:text-3xl text-gradient font-semibold md:font-bold pt-5 md:pt-10 md:pb-6">
-        <a href={`mailto:${email}`}>{email}</a>
+
+      {/* Email Section */}
+      <h3 className="email text-center text-base sm:text-lg md:text-xl lg:text-2xl text-gradient font-medium sm:font-semibold mb-2">
+        <a href={`mailto:${email}`} className="break-words">
+          {email}
+        </a>
       </h3>
-      <span className="text-center text-content text-xl font-light block">or</span>
-      <h3 className="phone text-center text-2xl md:text-3xl lg:text-3xl text-gradient font-semibold md:font-bold pt-2 md:py-6">
-        <a href={`tel:${phone}`}>{phone}</a>
+
+      {/* Separator */}
+      <span className="text-center text-content text-sm sm:text-base font-light block mb-2">
+        or
+      </span>
+
+      {/* Phone Section */}
+      <h3 className="phone text-center text-base sm:text-lg md:text-xl lg:text-2xl text-gradient font-medium sm:font-semibold">
+        <a href={`tel:${phone}`} className="break-words">
+          {phone}
+        </a>
       </h3>
     </main>
   );
