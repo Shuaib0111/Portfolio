@@ -12,6 +12,10 @@ function About() {
       opacity: 0,
       stagger: 0.3
     })
+    .from("p",{
+      opacity: 0,
+      duration: 1,
+    })
     
   })
   return (

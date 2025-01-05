@@ -43,7 +43,8 @@ export const personalDetails = {
 
 // Social Media URLs
 export const socialMediaUrl = {
-  linkdein: "www.linkedin.com/in/mohd-shuaib-anwar",
+  linkdein: "https://www.linkedin.com/in/mohd-shuaib-anwar",
+  
   github: "https://github.com/Shuaib0111",
 };
 
