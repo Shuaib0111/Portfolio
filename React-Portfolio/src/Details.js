@@ -2,7 +2,7 @@
 import logogradient from "./assets/logo.jpg";
 import logo from "./assets/logo2.svg";
 // Profile Image
-import profile from "./assets/profile-image.png";
+import profile from "./assets/profile-2.jpg";
 // Tech stack images
 import html from "./assets/techstack/html.png";
 import css from "./assets/techstack/css.png";
@@ -22,7 +22,7 @@ import postman from "./assets/techstack/postman.png";
 // Porject Images
 import projectImage1 from "./assets/projects/project1.jpg";
 import projectImage2 from "./assets/projects/project2.jpg";
-import projectImage3 from "./assets/projects/project3.jpeg";
+import projectImage3 from "./assets/projects/project3.jpg";
 import projectImage4 from "./assets/projects/project4.jpg";
 import projectImage5 from "./assets/projects/project5.jpg";
 import projectImage6 from "./assets/projects/project6.jpg";
@@ -101,52 +101,46 @@ export const techStackDetails = {
 // Project Details 
 export const projectDetails = [
   {
-    title: "JOB PORTAL",
+    title: "Take Off Travels",
     image: projectImage1,
-    description: `A job portal built with the MERN stack, offering role-based access for admins to manage job listings and user details, while users can post jobs and apply for openings.`,
-    techstack: "React.js, Node.js, Express.js, MongoDB",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com/Shuaib0111/Internship_Project",
+    description: `A full-stack travel booking platform where users can explore and book exciting holiday packages, while admins have full control to create, update, and manage all packages. Designed to deliver seamless experience for both travelers and admin staff.`,
+    techstack: "MongoDB, Express.js, React.js, Node.js, Tailwind CSS",
+    previewLink: "https://takeofftravels.live",
   },
   {
-    title: "News Website",
+    title: "ABIA Fashion",
     image: projectImage2,
-    description: `A news website built with React, fetching global news via API, with search and category browsing features for an interactive experience.`,
+    description: `A stunning frontend website for a designer clothing brand that showcases a range of premium women's wear. Built with smooth UI, elegant visuals, and clear navigation to provide an immersive fashion browsing experience.`,
     techstack: "React.js, Tailwind CSS",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com/Shuaib0111/React-Projects",
+    previewLink: "https://abiafashion.in",
   },
   {
-    title: "Ochi Website Front-end Replication",
+    title: "Golden Leaf Caterers",
     image: projectImage3,
-    description: `A React-based front-end replica of the Ochi website with GSAP animations and advanced scrolling effects using Locomotive Scroll.`,
-    techstack: "React.js, Tailwind CSS, Locomotive",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com/Shuaib0111/OCHI_website_front-end_replication",
+    description: `An elegant catering business website where users can view menus, browse veg/non-veg options, and place bookings for events. Designed to attract local customers with a clean layout, easy info access, and responsive interface.`,
+    techstack: "React.js, Tailwind CSS",
+    previewLink: "https://goldenleafcaterers.com",
   },
   {
-    title: "Tic Tac Toe",
+    title: "Khas Architect Studio",
     image: projectImage4,
-    description: `A JavaScript-based Tic Tac Toe game, providing a simple and engaging two-player experience with dynamic gameplay.`,
-    techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com/Shuaib0111/Basic-Front-End-Projects/tree/main/Tic%20Tac%20Toe",
+    description: `A premium architectural portfolio website that presents services like interior, exterior, and structural design. Clients can view latest works, explore project galleries, and even book architectural consultations online.`,
+    techstack: "React.js, Tailwind CSS, Framer Motion",
+    previewLink: "https://khasarchitectstudio.in",
   },
   {
-    title: "Todo List",
+    title: "X Factor Interior",
     image: projectImage5,
-    description: `Built a To-Do list app using React Context API for managing tasks with real-time updates.`,
-    techstack: "React.js , Tailwind CSS",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com/Shuaib0111/Context-API-Projects",
+    description: `A beautifully structured website for an interior design company that showcases high-end design projects, gallery sections, and booking options for potential clients looking for custom interiors.`,
+    techstack: "React.js, Tailwind CSS",
+    previewLink: "https://xfactorinterior.in",
   },
   {
-    title: "Digital Clock",
+    title: "KP Flex",
     image: projectImage6,
-    description: `Created a digital clock using HTML, CSS, and JavaScript to display real-time time with dynamic updates every second.`,
-    techstack: "HTML, CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com/Shuaib0111/Basic-Front-End-Projects/tree/main/Digital%20Clock",
+    description: `Corporate website for KP Retail Solution Pvt. Ltd., offering services in signage, interior design, exhibitions, activations, and marketing. Features live chat integration for real-time user engagement.`,
+    techstack: "React.js, Tailwind CSS",
+    previewLink: "https://kpflex.in",
   },
 ];
 

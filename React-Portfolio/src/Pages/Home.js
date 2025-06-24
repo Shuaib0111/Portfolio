@@ -11,17 +11,13 @@ function Home() {
 
   useEffect(() => {
     const tl = gsap.timeline();
-    tl.from(
-      h11.current,
-      {
-        x: "-100%",
-        delay: 0.8,
-        opacity: 0,
-        duration: 1,
-        ease: "Power3.easeOut",
-      },
-      "<"
-    )
+    tl.from(h11.current, {
+      x: "-100%",
+      delay: 0.8,
+      opacity: 0,
+      duration: 1,
+      ease: "Power3.easeOut",
+    })
       .from(
         h12.current,
         {
@@ -64,33 +60,37 @@ function Home() {
   }, []);
 
   return (
-    <main className="container mx-auto px-4 py-12 flex flex-col-reverse md:flex-row justify-between items-center max-w-screen-lg">
+    <main className="container mx-auto px-4 py-22 flex flex-col-reverse md:flex-row justify-between items-center max-w-screen-lg">
       {/* Text Section */}
-      <div className="text-center md:text-left md:w-1/2 mb-8 md:mb-0">
+      <div className="text-center md:text-left md:w-1/2 mb-10 md:mb-0">
         <h1
           ref={h11}
-          className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-4xl font-bold mb-2"
+          className="text-2xl md:text-4xl xl:text-4xl font-bold text-gray-900 dark:text-white mb-2"
         >
           Hi,<br />
-          This is<br />
+          This is
         </h1>
         <h1
           ref={h12}
-          className="text-2xl bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500 text-transparent md:text-4xl xl:text-5xl font-bold mb-2"
+          className="text-3xl md:text-5xl xl:text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-500 mb-3"
         >
           {name}
         </h1>
         <h2
           ref={h13}
-          className="mt-2 text-xl text-dark-heading dark:text-light-heading md:text-2xl xl:text-3xl tracking-tight font-bold mb-6"
+          className="text-lg md:text-xl xl:text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-2"
         >
+          I'm a Full Stack Web Developer
+        </h2>
+        <h2 className="text-md md:text-lg xl:text-xl text-gray-700 dark:text-gray-300 font-medium mb-6">
           {tagline}
         </h2>
+
         <div className="button mt-8">
           <a
-            href="/Mohd Shuaib Anwar resume_2025 (2).pdf"
+            href="/Mohd Shuaib Anwar resume_2025(M).pdf"
             download
-            className="px-6 py-3 bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-xl border-[1px] border-blue-900 hover:bg-none hover:text-blue-600 hover:font-semibold hover:border-[1px] hover:border-gradient-to-r hover:border-blue-700 transition duration-300"
+            className="px-6 py-3 bg-gradient-to-r from-black to-gray-700 text-white rounded-xl border border-gray-700 hover:bg-white hover:text-white hover:font-semibold transition duration-300"
           >
             Get Resume
           </a>
@@ -98,13 +98,15 @@ function Home() {
       </div>
 
       {/* Image Section */}
-      <div className="flex justify-center md:justify-end w-full md:w-1/2 mb-8 md:mb-0">
-        <img
-          ref={myimageref}
-          className="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover"
-          src={img}
-          alt="Mohd Shuaib Anwar"
-        />
+      <div className="flex justify-center md:justify-end w-full md:w-1/2">
+        <div className="w-72 h-72 md:w-80 md:h-80 rounded-full relative bottom-6 flex items-center justify-center">
+          <img
+            ref={myimageref}
+            src={img}
+            alt="Mohd Shuaib Anwar"
+            className="w-[100%] h-[100%] rounded-full object-cover"
+          />
+        </div>
       </div>
     </main>
   );
