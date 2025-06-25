@@ -105,7 +105,7 @@ export const projectDetails = [
     image: projectImage1,
     description: `A full-stack travel booking platform where users can explore and book exciting holiday packages, while admins have full control to create, update, and manage all packages. Designed to deliver seamless experience for both travelers and admin staff.`,
     techstack: "MongoDB, Express.js, React.js, Node.js, Tailwind CSS",
-    previewLink: "https://takeofftravels.live",
+    previewLink: "https://www.takeofftravels.co.in/",
   },
   {
     title: "ABIA Fashion",
@@ -119,28 +119,28 @@ export const projectDetails = [
     image: projectImage3,
     description: `An elegant catering business website where users can view menus, browse veg/non-veg options, and place bookings for events. Designed to attract local customers with a clean layout, easy info access, and responsive interface.`,
     techstack: "React.js, Tailwind CSS",
-    previewLink: "https://goldenleafcaterers.com",
+    previewLink: "https://www.goldenleafcaterers.in/",
   },
   {
     title: "Khas Architect Studio",
     image: projectImage4,
     description: `A premium architectural portfolio website that presents services like interior, exterior, and structural design. Clients can view latest works, explore project galleries, and even book architectural consultations online.`,
     techstack: "React.js, Tailwind CSS, Framer Motion",
-    previewLink: "https://khasarchitectstudio.in",
+    previewLink: "https://khasarchitects.in/",
   },
   {
     title: "X Factor Interior",
     image: projectImage5,
     description: `A beautifully structured website for an interior design company that showcases high-end design projects, gallery sections, and booking options for potential clients looking for custom interiors.`,
     techstack: "React.js, Tailwind CSS",
-    previewLink: "https://xfactorinterior.in",
+    previewLink: "https://xfactorinteriors.co.in/",
   },
   {
-    title: "KP Flex",
+    title: "KP RETAIL",
     image: projectImage6,
     description: `Corporate website for KP Retail Solution Pvt. Ltd., offering services in signage, interior design, exhibitions, activations, and marketing. Features live chat integration for real-time user engagement.`,
     techstack: "React.js, Tailwind CSS",
-    previewLink: "https://kpflex.in",
+    previewLink: "https://kpretail.in/",
   },
 ];
 
